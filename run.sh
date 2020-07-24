@@ -1,0 +1,1 @@
+cd "/home/arman/Documents/Upwork/Convert from Python to Java" ; /usr/lib/jvm/java-11-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 @/tmp/cp_amkwcxsd4k56fapcxje4bj9g6.argfile spyline.App
