@@ -1,0 +1,27 @@
+[package]
+name = "spyline"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+authors = ["Spyline contributors"]
+description = "Weighted least-squares B-spline curve fitting with optimal knot placement"
+license = "MIT"
+repository = "https://github.com/armansw/spyline"
+readme = "README.md"
+keywords = ["spline", "b-spline", "interpolation", "curve-fitting", "numerical"]
+categories = ["mathematics", "science"]
+
+[lib]
+name = "spyline"
+path = "src/lib.rs"
+
+[[bin]]
+name = "spyline"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[dev-dependencies]
