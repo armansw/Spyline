@@ -3,8 +3,7 @@
 //! A weighted least-squares **B-spline curve fitting** library, ported from the
 //! original Java implementation to safe, dependency-free Rust.
 //!
-//! This module currently exposes the core data types; the spline model and
-//! fitter are introduced in later modules.
+//! This revision adds the [`spline`] model on top of the core data types.
 
 #![allow(
     clippy::needless_range_loop,
@@ -16,6 +15,8 @@
 
 pub mod point;
 pub mod points;
+pub mod spline;
 
 pub use point::Point;
 pub use points::Points;
+pub use spline::Spline;
